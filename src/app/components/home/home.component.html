@@ -1,0 +1,12 @@
+<div class="container mt-5">
+    <h5 class="text-center mb-3">Get Random Jokes</h5>
+    <div *ngIf="jokeList" class="text-center p-4 bg-light border rounded shadow">
+      <h4 class="text-primary">{{ jokeList.jokeList }}</h4>
+      <h4 class="text-secondary">{{ jokeList.setup }}</h4>
+      <h5 class="text-muted">{{ jokeList.delivery }}</h5>
+    </div>
+    <div class="text-center mt-4">
+      <button class="btn btn-primary btn-lg" (click)="getJoke()">Get Joke</button>
+    </div>
+  </div>
+  
